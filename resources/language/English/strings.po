@@ -140,3 +140,6 @@ msgctxt "#30013"
 msgid "Number of seconds between status polls"
 msgstr ""
 
+msgctxt "#30014"
+msgid "Debug enabled?"
+msgstr ""
