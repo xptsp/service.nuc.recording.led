@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-	<category label="30012">
-		<setting label="30013" type="int" id="sleep_time" default="5" />
-		<setting label="30014" type="bool" id="debug_flag" default="false" />
-	</category>
 	<category label="30000">
 		<setting label="30001" type="lsep" />
 		<setting label="30002" type="slider" id="p0_bright" default="100" range="0,10,100" option="percent" />

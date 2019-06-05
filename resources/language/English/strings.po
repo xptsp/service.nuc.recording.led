@@ -1,8 +1,18 @@
 # XBMC Media Center language file
-# Addon Name: Recording LED Service
-# Addon id: service.recording-led-nuc
-# Addon version: 0.1
-# Addon Provider: xptsp
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"POT-Creation-Date: 2013-12-03 11:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#Plugin settings strings
 
 msgctxt "#30051"
 msgid "OK"
@@ -134,12 +144,4 @@ msgstr ""
 
 msgctxt "#30012"
 msgid "General"
-msgstr ""
-
-msgctxt "#30013"
-msgid "Number of seconds between status polls"
-msgstr ""
-
-msgctxt "#30014"
-msgid "Debug enabled?"
 msgstr ""
