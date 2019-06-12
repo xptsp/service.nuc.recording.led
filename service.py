@@ -292,7 +292,10 @@ def is_recording():
 	try:
 		data = json_request(PVR_GET_PROPERTIES)
 		if data['result']:
-			result = True if data['result']['recording'].lower() == 'true' else False
+			if data['result']['recording'].lower() == 'true':
+				result = True
+			else:
+				result = False;
 	except KeyError:
 		pass
 
