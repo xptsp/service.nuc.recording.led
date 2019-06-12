@@ -145,3 +145,23 @@ msgstr ""
 msgctxt "#30012"
 msgid "General"
 msgstr ""
+
+msgctxt "#30013"
+msgid "Server IP Address"
+msgstr ""
+
+msgctxt "#30014"
+msgid "Username"
+msgstr ""
+
+msgctxt "#30015"
+msgid "Password"
+msgstr ""
+
+msgctxt "#30016"
+msgid "SSL enabled?"
+msgstr ""
+
+msgctxt "#30017"
+msgid "Delay between pollings"
+msgstr ""
