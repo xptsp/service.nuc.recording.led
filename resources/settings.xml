@@ -9,7 +9,7 @@
 		<setting label="30005" type="lsep" />
 		<setting label="30006" type="slider" id="r0_bright" default="100" range="0,10,100" option="percent" />
 		<setting label="30007" type="enum" id="r0_fade" lvalues="31000|31001|31002|31003|31004|31005|31006" default="0" />
-		<setting label="30008" type="enum" id="r0_color" lvalues="32000|32001|32002|32003|32004|32005|32006|32007" default="0" />
+		<setting label="30008" type="enum" id="r0_color" lvalues="33000|33001|33002|33003|33004|33005|33006|33007" default="0" />
 	</category>
 	<category label="30009">
 		<setting label="30010" type="lsep" />
@@ -20,6 +20,6 @@
 		<setting label="30011" type="lsep" />
 		<setting label="30006" type="slider" id="r1_bright" default="100" range="0,10,100" option="percent" />
 		<setting label="30007" type="enum" id="r1_fade" lvalues="31000|31001|31002|31003|31004|31005|31006" default="0" />
-		<setting label="30008" type="enum" id="r1_color" lvalues="32000|32001|32002|32003|32004|32005|32006|32007" default="0" />
+		<setting label="30008" type="enum" id="r1_color" lvalues="33000|33001|33002|33003|33004|33005|33006|33007" default="0" />
 	</category>
 </settings>
