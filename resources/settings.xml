@@ -6,7 +6,7 @@
 		<setting label="30015" type="text" id="kodi_password" default="" visible="true" />		 
 		<setting label="30016" type="bool" id="kodi_ssl" default="false" visible="true" />
 		<setting type="sep" />
-		<setting label="30017" type="slider" id="sleep_time" default="5" range="0,5,100" option="percent" />
+		<setting label="30017" type="slider" id="sleep_time" default="5" range="5,5,60" option="int" />
 	</category>
 	<category label="30000">
 		<setting label="30001" type="lsep" />
