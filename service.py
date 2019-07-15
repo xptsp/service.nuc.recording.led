@@ -1,7 +1,6 @@
 ﻿#!/usr/bin/python
 
-import commands
-import serial, sys
+import commands, sys
 import threading, time
 
 import xbmc
