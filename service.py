@@ -27,7 +27,8 @@ class MyMonitor( xbmc.Monitor ):
 def load_addon_settings():
     global p0_bright, p0_fade, p0_color, p1_bright, p1_fade, p1_color
     global r0_bright, r0_fade, r0_color, r1_bright, r1_fade, r1_color
-    global sleep_time, kodi_ssl, kodi_server, kodi_username, kodi_password
+    global use_localhost, kodi_ssl, kodi_server, kodi_username, kodi_password
+    global sleep_time, power_enabled, ring_enabled
 
     ############################################################################
     # Sleep time between status polls:
@@ -41,12 +42,30 @@ def load_addon_settings():
         sleep_time = 0
 
     ############################################################################
+    # Enable power and/or ring LEDs?
+    ############################################################################
+    try:
+        power_enabled = __setting__('power_enabled') == 'true'
+    except ValueError:
+        power_enabled = False
+
+    try:
+        ring_enabled = __setting__('ring_enabled') == 'true'
+    except ValueError:
+        ring_enabled = False
+
+    ############################################################################
     # Kodi IP address and credentials:
     ############################################################################
     try:
-        kodi_ssl = __setting__('kodi_ssl')
+        use_localhost = __setting__('use_localhost') == 'true'
     except ValueError:
-        kodi_ssl = 'false'
+        use_localhost = False
+
+    try:
+        kodi_ssl = __setting__('kodi_ssl') == 'true'
+    except ValueError:
+        kodi_ssl = False
 
     try:
         kodi_server = __setting__('kodi_server')
@@ -280,7 +299,7 @@ def load_addon_settings():
 
 def json_request(kodi_request, ssl, host, username, password):
     PORT   =    8080
-    if ssl == "true":
+    if ssl:
         URL = "https://"
     else:
         URL = "http://"
@@ -311,8 +330,12 @@ def is_recording():
         'id': 1
     }
 
+    if use_localhost:
+        server_name = 'localhost'
+    else:
+        server_name = kodi_server
     try:
-        data = json_request(PVR_GET_PROPERTIES, kodi_ssl, kodi_server, kodi_username, kodi_password)
+        data = json_request(PVR_GET_PROPERTIES, kodi_ssl, server_name, kodi_username, kodi_password)
         if data['result']:
             result = data['result']['recording']
     except KeyError:
@@ -337,16 +360,28 @@ if __name__ == '__main__':
     xbmc.log(msg='[{}] Addon started.'.format(__addon_id__), level=xbmc.LOGNOTICE)
     load_addon_settings()
 
-    set_nuc_led(p0_bright, p0_fade, p0_color, "power")
-    set_nuc_led(r0_bright, r0_fade, r0_color, "ring")
+    if power_enabled:
+        set_nuc_led(p0_bright, p0_fade, p0_color, "power")
+    if ring_enabled:
+        set_nuc_led(r0_bright, r0_fade, r0_color, "ring")
+    recording = False
 
     while not monitor.abortRequested():
         if is_recording():
-            set_nuc_led(p1_bright, p1_fade, p1_color, "power")
-            set_nuc_led(r1_bright, r1_fade, r1_color, "ring")
+            if not recording:
+                if power_enabled:
+                    set_nuc_led(p1_bright, p1_fade, p1_color, "power")
+                if ring_enabled:
+                    set_nuc_led(r1_bright, r1_fade, r1_color, "ring")
+            recording = True
         else:
-            set_nuc_led(p0_bright, p0_fade, p0_color, "power")
-            set_nuc_led(r0_bright, r0_fade, r0_color, "ring")
+            if recording:
+                if power_enabled:
+                    set_nuc_led(p0_bright, p0_fade, p0_color, "power")
+                if ring_enabled:
+                    set_nuc_led(r0_bright, r0_fade, r0_color, "ring")
+            recording = False
+        
         if monitor.waitForAbort(float(sleep_time)):
             break
 #else:

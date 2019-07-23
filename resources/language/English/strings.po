@@ -38,48 +38,8 @@ msgctxt "#30003"
 msgid "Blinking frequency"
 msgstr ""
 
-msgctxt "#31000"
-msgid "Solid Color"
-msgstr "No blink or fade."
-
-msgctxt "#31001"
-msgid "1Hz Blink"
-msgstr "Blinks once every second."
-
-msgctxt "#31002"
-msgid "0.5Hz Blink"
-msgstr "Blinks once every 2 seconds."
-
-msgctxt "#31003"
-msgid "0.25Hz Blink"
-msgstr "Blinks once every 4 seconds."
-
-msgctxt "#31004"
-msgid "1Hz Fade"
-msgstr "Fades once every second."
-
-msgctxt "#31005"
-msgid "0.5Hz Fade"
-msgstr "Fades once every 2 seconds."
-
-msgctxt "#31006"
-msgid "0.25Hz Fade"
-msgstr "Fades once every 4 seconds."
-
 msgctxt "#30004"
 msgid "Power LED Color: Normal"
-msgstr ""
-
-msgctxt "#32000"
-msgid "Off"
-msgstr ""
-
-msgctxt "#32001"
-msgid "Amber"
-msgstr ""
-
-msgctxt "#32002"
-msgid "Blue"
 msgstr ""
 
 msgctxt "#30005"
@@ -87,7 +47,7 @@ msgid "Ring LED Settings"
 msgstr ""
 
 msgctxt "#30006"
-msgid "Power LED Brightness"
+msgid "Ring LED Brightness"
 msgstr ""
 
 msgctxt "#30007"
@@ -96,38 +56,6 @@ msgstr ""
 
 msgctxt "#30008"
 msgid "Ring LED Color: Normal"
-msgstr ""
-
-msgctxt "#33000"
-msgid "Off"
-msgstr ""
-
-msgctxt "#33001"
-msgid "Cyan"
-msgstr ""
-
-msgctxt "#33002"
-msgid "Blue"
-msgstr ""
-
-msgctxt "#33003"
-msgid "Green"
-msgstr ""
-
-msgctxt "#33004"
-msgid "Pink"
-msgstr ""
-
-msgctxt "#33005"
-msgid "Red"
-msgstr ""
-
-msgctxt "#33006"
-msgid "White"
-msgstr ""
-
-msgctxt "#33007"
-msgid "Yellow"
 msgstr ""
 
 msgctxt "#30009"
@@ -165,3 +93,104 @@ msgstr ""
 msgctxt "#30017"
 msgid "Delay between pollings"
 msgstr ""
+
+msgctxt "#30018"
+msgid "Use LocalHost for recording query?"
+msgstr ""
+
+msgctxt "#30020"
+msgid "Control Power LED?"
+msgstr ""
+
+msgctxt "#30021"
+msgid "Control Ring LED?"
+msgstr ""
+
+msgctxt "#30022"
+msgid "Power LED"
+msgstr ""
+
+msgctxt "#30023"
+msgid "Ring LED"
+msgstr ""
+
+msgctxt "#30024"
+msgid "Normal Setting"
+msgstr ""
+
+msgctxt "#30025"
+msgid "While Recording"
+msgstr ""
+
+msgctxt "#31000"
+msgid "Solid Color"
+msgstr "No blink or fade."
+
+msgctxt "#31001"
+msgid "1Hz Blink"
+msgstr "Blinks once every second."
+
+msgctxt "#31002"
+msgid "0.5Hz Blink"
+msgstr "Blinks once every 2 seconds."
+
+msgctxt "#31003"
+msgid "0.25Hz Blink"
+msgstr "Blinks once every 4 seconds."
+
+msgctxt "#31004"
+msgid "1Hz Fade"
+msgstr "Fades once every second."
+
+msgctxt "#31005"
+msgid "0.5Hz Fade"
+msgstr "Fades once every 2 seconds."
+
+msgctxt "#31006"
+msgid "0.25Hz Fade"
+msgstr "Fades once every 4 seconds."
+
+msgctxt "#32000"
+msgid "Off"
+msgstr ""
+
+msgctxt "#32001"
+msgid "Amber"
+msgstr ""
+
+msgctxt "#32002"
+msgid "Blue"
+msgstr ""
+
+msgctxt "#33000"
+msgid "Off"
+msgstr ""
+
+msgctxt "#33001"
+msgid "Cyan"
+msgstr ""
+
+msgctxt "#33002"
+msgid "Blue"
+msgstr ""
+
+msgctxt "#33003"
+msgid "Green"
+msgstr ""
+
+msgctxt "#33004"
+msgid "Pink"
+msgstr ""
+
+msgctxt "#33005"
+msgid "Red"
+msgstr ""
+
+msgctxt "#33006"
+msgid "White"
+msgstr ""
+
+msgctxt "#33007"
+msgid "Yellow"
+msgstr ""
+
