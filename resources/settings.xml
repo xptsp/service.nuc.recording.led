@@ -5,9 +5,9 @@
 		<setting type="sep" />
 		<setting label="30018" type="bool" id="use_localhost" default="true" />
 		<setting label="30013" type="text" id="kodi_server" default="localhost" visible="eq(-1,false)" />
-		<setting label="30014" type="text" id="kodi_username" default=""visible="eq(-2,false)" />
-		<setting label="30015" type="text" id="kodi_password" default=""visible="eq(-3,false)" />
-		<setting label="30016" type="bool" id="kodi_ssl" default="false"visible="eq(-4,false)" />
+		<setting label="30014" type="text" id="kodi_username" default="" visible="eq(-2,false)" />
+		<setting label="30015" type="text" id="kodi_password" default="" visible="eq(-3,false)" />
+		<setting label="30016" type="bool" id="kodi_ssl" default="false" visible="eq(-4,false)" />
 	</category>
 	<category label="30022">
 		<setting label="30020" type="bool" id="power_enabled" default="true" />
